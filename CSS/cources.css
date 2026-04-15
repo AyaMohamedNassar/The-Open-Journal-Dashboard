@@ -1,0 +1,61 @@
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding: 20px;
+  gap: 20px;
+}
+@media (max-width: 767.98px) {
+  .courses {
+    grid-template-columns: minmax(200px, fr);
+  }
+}
+.course {
+  position: relative;
+  background-color: white;
+  border-radius: var(--rad-10);
+}
+.course > img:first-child {
+  position: absolute;
+  border: 1px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 10px;
+  left: 10px;
+}
+.course > img:nth-child(2) {
+  width: 100%;
+  border-top-left-radius: var(--rad-10);
+  border-top-right-radius: var(--rad-10);
+}
+
+.course .details {
+  padding: 20px;
+}
+.course .details h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+.course .details p {
+  color: var(--grey-color);
+  line-height: 1.7;
+  font-size: 14px;
+}
+.course .insights {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  color: var(--grey-color);
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  position: relative;
+}
+
+.course .insights .title {
+  color: white;
+  background-color: var(--blue-color);
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}

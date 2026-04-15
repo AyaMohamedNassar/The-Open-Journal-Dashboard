@@ -1,0 +1,77 @@
+.project {
+  position: relative;
+}
+.project h4 {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.project > span {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 14px;
+  color: var(--grey-color);
+}
+.project .team {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+.project .team img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.project .team a:not(:first-child) img {
+  margin-left: -15px;
+}
+.project .team a {
+  transition: var(--transition);
+}
+.project .team a:hover {
+  z-index: 1000;
+}
+.project .skills {
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+  text-align: right;
+}
+.project .skills > span {
+  margin-left: 10px;
+  font-size: 14px;
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.project .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project .progress-bar {
+  background-color: #eee;
+  height: 6px;
+  width: 250px;
+  border-radius: 20px;
+}
+.project .progress {
+  background-color: var(--red-color);
+  height: 100%;
+  border-radius: 20px;
+}
+.project .green {
+  background-color: var(--green-color);
+}
+.project .blue {
+  background-color: var(--blue-color);
+}
+.project .info > span {
+  color: var(--grey-color);
+}

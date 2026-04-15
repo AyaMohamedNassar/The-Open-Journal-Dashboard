@@ -1,0 +1,226 @@
+.site-control > .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-control .info > p {
+  font-size: 14px;
+  color: var(--grey-color);
+  margin-top: 6px;
+}
+
+
+
+.site-control textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--grey-color);
+  border-radius: 4px;
+  resize: none;
+  margin-top: 10px;
+  min-height: 150px;
+}
+/* General info */
+.general-info div label {
+  display: block;
+  color: var(--grey-color);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.general-info div input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--rad-6);
+  margin-bottom: 15px;
+}
+.general-info div input::placeholder {
+  color: var(--grey-color);
+  font-size: 13px;
+}
+.general-info div:last-child input {
+  display: inline-flex;
+  justify-content: space-between;
+  width: calc(100% - 81px);
+}
+.general-info div:last-child button {
+  border: none;
+  color: var(--blue-color);
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* End General info */
+
+/* Start security-info */
+.security-info > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.security-info > div:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.security-info .info p {
+  font-size: 13px;
+  color: var(--grey-color);
+  margin-top: 5px;
+}
+
+.security-info > div > button {
+  border: none;
+  cursor: pointer;
+  border-radius: var(--rad-6);
+  font-size: 14px;
+}
+.security-info > div:first-of-type button {
+  background-color: var(--blue-color);
+  color: white;
+}
+
+/* End security-info */
+.social-info > div {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+  border-radius: var(--rad-6);
+}
+
+.social-info > div i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--grey-color);
+  width: 40px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  transition: 0.3s;
+}
+.social-info > div input {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+  border-radius: 0 6px 6px 0;
+  caret-color: black;
+}
+.social-info > div input::placeholder {
+  color: var(--grey-color);
+  font-size: 13px;
+}
+.social-info > div:focus-within i {
+  color: black;
+}
+
+.controls > .control {
+  margin-bottom: 10px;
+}
+.controls > .control input[type="checkbox"] {
+  --webkit-appearance: none;
+  appearance: none;
+}
+.controls > .control input[type="checkbox"]:checked + label::after {
+  transform: scale(1);
+}
+.controls > .control label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.controls > .control label::before,
+.controls > .control label::after {
+  position: absolute;
+  margin-top: -9px;
+  left: 0;
+  top: 50%;
+  border-radius: 4px;
+}
+.controls > .control label::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--grey-color);
+}
+.controls > .control label:hover::before {
+  border-color: var(--blue-alt-color);
+}
+.controls label::after {
+  content: "\f00c";
+  font-family: var(--fa-style-family-classic);
+  font-weight: 900;
+  background-color: var(--blue-color);
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+  transform: scale(0) rotate(360deg);
+}
+.backup-manager > .backup-date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.backup-manager > .backup-date:nth-of-type(3) {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 25px;
+}
+.backup-manager .backup-date > input {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.backup-manager .backup-date > label {
+  cursor: pointer;
+}
+
+/* Servers Types */
+.backup-manager .servers-types {
+  display: flex;
+  gap: 15px;
+}
+@media (max-width:767.98px) {
+  .backup-manager .servers-types {
+    flex-wrap: wrap;
+  }
+}
+.backup-manager .servers-types > input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.backup-manager .servers-types .server {
+  border: 2px solid #eee;
+  padding: 15px;
+  border-radius: var(--rad-6);
+  text-align: center;
+  width: 100%;
+}
+
+.backup-manager .server i {
+  display: block;
+  margin: auto;
+  padding-bottom: 5px;
+}
+.backup-manager .server label {
+  cursor: pointer;
+}
+
+.backup-manager input:checked + .server {
+  border-color: var(--blue-color);
+}
