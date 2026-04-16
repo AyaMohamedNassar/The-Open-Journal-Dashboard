@@ -7,6 +7,8 @@
 @media (max-width: 767.98px) {
   .friends {
     grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    padding: 10px;
   }
 }
 .friend {
@@ -83,12 +85,22 @@
   color: white;
   font-size: 14px;
   cursor: pointer;
+  display: inline-block;
 }
 .friend .more-info a:first-of-type {
   background-color: var(--blue-color);
 }
 .friend .more-info a:last-of-type {
   background-color: var(--red-color);
+}
+@media (max-width: 575.98px) {
+  .friend .more-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .friend .more-info > span {
+    margin-bottom: 10px;
+  }
 }
 
 .vip {

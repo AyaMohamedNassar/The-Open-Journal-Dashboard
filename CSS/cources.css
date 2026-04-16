@@ -6,7 +6,9 @@
 }
 @media (max-width: 767.98px) {
   .courses {
-    grid-template-columns: minmax(200px, fr);
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    padding: 10px;
   }
 }
 .course {

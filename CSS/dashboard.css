@@ -6,11 +6,6 @@
 }
 
 @media (max-width: 767.98px) {
-  .wrapper {
-    grid-template-columns: minmax(200px, 1fr);
-    gap: 10px;
-    margin: 0 10px;
-  }
   .welcome {
     display: block;
     text-align: center;
@@ -82,7 +77,6 @@
   background-color: var(--blue-alt-color);
 }
 
-
 @media (max-width: 767.98px) {
   .welcome .intro {
     padding-bottom: 30px;
@@ -91,7 +85,7 @@
     display: none;
   }
   .welcome .avatar {
-    margin:auto;
+    margin: auto;
     margin-top: -32px;
   }
   .body > div:not(:last-child) {
@@ -666,10 +660,21 @@
   flex: 1;
   padding: 20px;
 }
-
+@media (max-width: 575.98px) {
+  .social-media .box span {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
 .social-media .box a {
   color: white;
   margin-right: 20px;
+}
+@media (max-width: 575.98px) {
+  .social-media .box a {
+    margin-right: 10px;
+    font-size: 12px;
+  }
 }
 .social-media .x-twitter i,
 .social-media .x-twitter a {

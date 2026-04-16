@@ -13,6 +13,12 @@
   font-size: 14px;
   color: var(--grey-color);
 }
+@media (max-width: 575.98px) {
+  .project > span {
+    font-size: 12px;
+  }
+}
+
 .project .team {
   display: flex;
   align-items: flex-start;
@@ -43,13 +49,21 @@
   text-align: right;
 }
 .project .skills > span {
+  display: inline-block;
   margin-left: 10px;
   font-size: 14px;
   background-color: #eee;
   border-radius: 4px;
   padding: 4px 8px;
 }
-
+@media (max-width: 767.98px) {
+  .project .skills {
+    text-align: left;
+  }
+  .project .skills > span {
+    margin-bottom: 10px;
+  }
+}
 .project .info {
   display: flex;
   justify-content: space-between;
@@ -60,6 +74,11 @@
   height: 6px;
   width: 250px;
   border-radius: 20px;
+}
+@media (max-width: 575.98px) {
+  .project .progress-bar {
+    width: 200px;
+  }
 }
 .project .progress {
   background-color: var(--red-color);
@@ -74,4 +93,9 @@
 }
 .project .info > span {
   color: var(--grey-color);
+}
+@media (max-width: 575.98px) {  
+  .project .info > span {
+    font-size: 12px;
+  }
 }

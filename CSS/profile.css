@@ -1,17 +1,22 @@
 .profile-wrapper {
   margin: 0 20px;
 }
-
+@media (max-width: 767.98px) {
+  .profile-wrapper {
+    margin: 0 10px;
+  }
+}
 .info .toggle-switch {
   height: 20px;
 }
 .info .toggle-checkbox:checked + .toggle-switch::before {
-  left: 62px;
+  left: 54px;
 }
 .info .toggle-switch::before {
   width: 12px;
   height: 12px;
   font-size: 8px;
+  top: 4px;
 }
 
 .overview {
@@ -181,9 +186,31 @@
   height: 80px;
   margin-right: 20px;
 }
+@media (max-width: 575.98px) {
+  .latest-activity .activity img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+}
 .latest-activity .info {
   flex: 1;
 }
 .latest-activity .time > span {
   display: block;
+}
+@media (max-width: 575.98px) {
+   .activity .info{
+    margin-right: 5px;
+   }
+  .activity .info h3 {
+    margin: 12px 0;
+  }
+  .activity .info p {
+    font-size: 14px;
+    margin-top: 0;
+  }
+  .latest-activity .time > span {
+    font-size: 12px;
+  }
 }
